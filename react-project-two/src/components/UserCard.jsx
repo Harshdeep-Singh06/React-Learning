@@ -2,12 +2,12 @@ import React from 'react'
 import Aujla from '../assets/Aujla.jpg'
 import "./UserCard.css"
 
-const UserCard = () => {
+const UserCard = (props) => {
   return (
     <div className='user-container'>
-      <p id = "user-title">Harsh</p>
-      <img id="user-img" src={Aujla} alt = 'Aujla'></img>
-      <p id="user-desc">Description of Harsh </p>
+      <p id = "user-name">{props.name}</p>
+      <img id="user-img" src={props.image} alt = {props.name}></img>
+      <p id="user-desc">{props.desc}</p>
     </div>
   )
 }

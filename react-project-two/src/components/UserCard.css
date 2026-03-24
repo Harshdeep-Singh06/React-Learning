@@ -1,6 +1,6 @@
 .user-container{
     background-color: rgb(62, 23, 11);
-    padding: 20px;
+    padding: 10px;
     display:flex;
     flex-direction: column;
     gap: 1.5rem;
