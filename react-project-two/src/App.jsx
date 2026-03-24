@@ -9,9 +9,9 @@ function App() {
   return (
     <>
      <div className='container'>
-      <UserCard name = "Karan Aujla" desc = "desc1" image = {Aujla}/>
-      <UserCard name = "Navaan Sandhu" desc = "desc2" image = {Sandhu}/>
-      <UserCard name = "Cheema Y" deesc = "desc3" image = {Cheema}/>
+      <UserCard name = "Karan Aujla" desc = "desc1" image = {Aujla} style = {{"border-radius": "10px"}} />
+      <UserCard name = "Navaan Sandhu" desc = "desc2" image = {Sandhu} style = {{"border-radius": "10px"}}/>
+      <UserCard name = "Cheema Y" deesc = "desc3" image = {Cheema} style = {{"border-radius": "10px"}}/>
 
      </div>
     </>
