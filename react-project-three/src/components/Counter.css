@@ -1,0 +1,9 @@
+.counter-conatiner{
+    background-color:rgb(5, 65, 65);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.5rem;
+    border: 2px soild black;
+
+}
