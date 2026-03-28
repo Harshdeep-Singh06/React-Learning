@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Carddd = () => {
+const Carddd = (props) => {
   return (
     <div>
-      <h1 className='bg-amber-300'>Hello</h1>
+      {props.children}
     </div>
   )
 }
