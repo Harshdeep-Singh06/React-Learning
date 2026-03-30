@@ -8,6 +8,9 @@ function App() {
 
   return (
     <div className='flex flex-col justify-center items-center h-screen'>
+      <p className='font-bold font-serif text-pink-500'>
+        Hey buddy para here!
+      </p>
       <button className='rounded-lg bg-blue-400' onClick={handleClick}>
         Click me
       </button>
