@@ -12,8 +12,8 @@ function App() {
     alert("Hey buddy");
   }
 
-  function handleInput(){
-    console.log("Input changed");
+  function handleInput(e){
+    console.log("Value till now", e.target.value);
     
   }
 
