@@ -10,8 +10,9 @@ function App() {
   const [name, setName] = useState('');
   return (
     <div className='flex flex-col justify-center items-center h-screen gap-1'>
-      <Card name = {name} setName = {setName}/>
-      <p> Parent Component:  {name} </p>
+      <Card title = "Card1" name = {name} setName = {setName}/> 
+      <Card title = "Card2" name = {name} setName = {setName}/> 
+      {/* <p> Parent Component:  {name} </p> */}
     </div>
   )
 }
