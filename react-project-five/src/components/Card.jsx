@@ -8,7 +8,7 @@ const Card = (props) => {
        value={props.name} 
        onChange={(e)=>props.setName(e.target.value)}
        />
-       <p>Card compnent: {props.name}</p>
+       <p>Card compnent: {props.name} : {props.title} </p>
     </div>
   )
 }

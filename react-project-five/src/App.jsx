@@ -12,7 +12,7 @@ function App() {
     <div className='flex flex-col justify-center items-center h-screen gap-1'>
       <Card title = "Card1" name = {name} setName = {setName}/> 
       <Card title = "Card2" name = {name} setName = {setName}/> 
-      {/* <p> Parent Component:  {name} </p> */}
+      {/* <p> Parent Component:  {props.title} </p> */}
     </div>
   )
 }
