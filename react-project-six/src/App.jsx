@@ -6,16 +6,23 @@ import Login from './components/Login';
 function App() {
  const[isLoggedIn, setLoggedIn] = useState(false);
 
-  if(isLoggedIn){
-    return (
-      <Logout/>
-    )
-  }
-  else{
     return(
-      <Login/>
+      <div>
+        {isLoggedIn ? <Logout/> : <Login/>}
+      </div>
     )
-  }
+
+
+  // if(isLoggedIn){
+  //   return (
+  //     <Logout/>
+  //   )
+  // }
+  // else{
+  //   return(
+  //     <Login/>
+  //   )
+  // }
 
 }
 
