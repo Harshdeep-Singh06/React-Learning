@@ -17,11 +17,19 @@ function App() {
     
   }
 
+  function handleSubmit(e){
+    e.preventDefault();
+    alert("Wanna submit")
+  }
+
   return (
     <div className='flex flex-col justify-center items-center h-screen'>
 
-    <form>
-      <input className = "border border-blue-800 rounded-xl outline-none " type="text" onChange={handleInput}/>
+    <form onSubmit={handleSubmit}>
+      <input className = "px-4 py-1 border border-blue-800 rounded-l-xl outline-none " type="text" onChange={handleInput}/>
+      <button className='bg-blue-500 rounded-r-xl py-2 px-2 text-sm' type="submit">
+        Submit
+      </button>
     </form>
 
       {/* <p className='font-bold font-serif text-pink-500' onMouseOver={handleMouseOver}>
