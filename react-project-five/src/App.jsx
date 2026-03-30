@@ -9,8 +9,9 @@ function App() {
   // Sync child in all state
   const [name, setName] = useState('');
   return (
-    <div>
+    <div className='flex flex-col justify-center items-center h-screen gap-1'>
       <Card name = {name} setName = {setName}/>
+      <p> Parent Component:  {name} </p>
     </div>
   )
 }
