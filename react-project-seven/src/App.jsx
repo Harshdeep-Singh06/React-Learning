@@ -2,11 +2,13 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  function handleClick(){
+    alert("I am Clicked");
+  }
 
   return (
     <div className='flex flex-col justify-center items-center h-screen'>
-      <button className='rounded-lg bg-blue-400'>
+      <button className='rounded-lg bg-blue-400' onClick={handleClick}>
         Click me
       </button>
     </div>
