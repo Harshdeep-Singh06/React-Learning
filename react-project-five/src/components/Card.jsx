@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div>
-        
+       <input className='border border-black rounded-xl' type ='text'/>
     </div>
   )
 }
