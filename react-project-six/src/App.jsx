@@ -4,13 +4,25 @@ import Logout from './components/Logout';
 import Login from './components/Login';
 
 function App() {
- const[isLoggedIn, setLoggedIn] = useState(false);
+ const[isLoggedIn, setLoggedIn] = useState(true);
 
-    return(
-      <div>
-        {isLoggedIn ? <Logout/> : <Login/>}
-      </div>
-    )
+return(
+  <div>
+    <h1>
+      Welcome to the hood
+    </h1>
+    <div>
+      {isLoggedIn && <Logout/>}
+    </div>
+  </div>
+)
+
+
+    // return(
+    //   <div>
+    //     {isLoggedIn ? <Logout/> : <Login/>}
+    //   </div>
+    // )
 
 
   // if(isLoggedIn){
