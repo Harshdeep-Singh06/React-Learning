@@ -3,6 +3,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0);
+  const [total, setTotal] = useState(1);
   
   //first -> side-effect function
   //second -> clean-up function
@@ -23,22 +24,36 @@ function App() {
 
 
   //Variation: 3
-  useEffect(()=>{
-    alert("I will run every time when count is updated")
-  },[count])
+  // useEffect(()=>{
+  //   alert("I will run every time when count is updated")
+  // },[count])
 
+  //Variation: 4
+  useEffect(()=>{
+    alert("I will run every time when count/total  is updated")
+  },[count, total])
 
   function handleClick(){
     setCount(count+1);
   }
 
+  function handleClickTotal(){
+     setTotal(total+1);
+  }
+
   return (
    <div>
      <button onClick={handleClick}>
-      Click me
+      Update count
     </button>
     <br />
     Count is : {count}
+    <br/>
+     <button onClick={handleClickTotal}>
+      Update Total
+    </button>
+    <br />
+    Total is : {total}
    </div>
     
   )
