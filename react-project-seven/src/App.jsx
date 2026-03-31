@@ -24,13 +24,19 @@ function App() {
 
   return (
     <div className='flex flex-col justify-center items-center h-screen'>
+    <button className='border-2 border-rose-500 rounded-xl px-4 text-blue-700'>
+      Click me
+    </button>
 
-    <form onSubmit={handleSubmit}>
+
+
+    {/* <form onSubmit={handleSubmit}>
       <input className = "px-4 py-1 border border-blue-800 rounded-l-xl outline-none " type="text" onChange={handleInput}/>
       <button className='bg-blue-500 rounded-r-xl py-2 px-2 text-sm' type="submit">
         Submit
       </button>
-    </form>
+    </form> */}
+
 
       {/* <p className='font-bold font-serif text-pink-500' onMouseOver={handleMouseOver}>
         Hey buddy para here!
