@@ -17,9 +17,15 @@ function App() {
 
   // Variation: 2
   // that runs on only first render
+  // useEffect(()=>{
+  //   alert(" I will run on only first render")
+  // },[])
+
+
+  //Variation: 3
   useEffect(()=>{
-    alert(" I will run on only first render")
-  },[])
+    alert("I will run every time when count is updated")
+  },[count])
 
 
   function handleClick(){
