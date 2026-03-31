@@ -10,10 +10,17 @@ function App() {
 
  //Variation : 1
  //Runs on every render
- useEffect(() => {
-    alert("I will run on each render")
+  // useEffect(() => {
+  //    alert("I will run on each render")
 
-  })
+  // })
+
+  // Variation: 2
+  // that runs on only first render
+  useEffect(()=>{
+    alert(" I will run on only first render")
+  },[])
+
 
   function handleClick(){
     setCount(count+1);
