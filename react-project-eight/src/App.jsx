@@ -2,8 +2,8 @@ import { use, useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [total, setTotal] = useState(1);
+  // const [count, setCount] = useState(0);
+  // const [total, setTotal] = useState(1);
   
   //first -> side-effect function
   //second -> clean-up function
@@ -34,22 +34,22 @@ function App() {
   // },[count, total])
 
   //Variation: 5
-  useEffect(()=>{
-    alert("Count is Updated")
+  // useEffect(()=>{
+  //   alert("Count is Updated")
 
-    return()=>{
-      alert("count is unmounted from UI");
-    }
+  //   return()=>{
+  //     alert("count is unmounted from UI");
+  //   }
 
-  },[count])
+  // },[count])
 
-  function handleClick(){
-    setCount(count+1);
-  }
+  // function handleClick(){
+  //   setCount(count+1);
+  // }
 
-  function handleClickTotal(){
-     setTotal(total+1);
-  }
+  // function handleClickTotal(){
+  //    setTotal(total+1);
+  // }
 
   return (
    <div>
