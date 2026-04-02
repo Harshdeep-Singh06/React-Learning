@@ -1,10 +1,10 @@
 import React, {useContext} from 'react'
-import { themeContext } from '../App'
+import { themeContext,UserContext } from '../App'
 
 const ChildC = () => {
-    // const user = useContext(UserContext);
+    const user = useContext(UserContext);
     const {theme,setTheme} = useContext(themeContext);
-    function handleClick(){
+    function toggleTheme(){
       if(theme === 'light'){
         setTheme("dark")
       }else{
@@ -14,9 +14,10 @@ const ChildC = () => {
   return (
     <div>
        <button className='shadow-xl rounded-xl px-2 py-1 text-sm bg-pink-300 font-serif'
-       onClick={handleClick}>
+       onClick={toggleTheme}>
         Change Theme
        </button>
+       data: {user.name}
     </div>
   )
 }
