@@ -12,13 +12,14 @@ function App() {
   const [user, setUser] = useState({name:"Love"});
 
   return (
-   <div>
-    <UserContext.Provider value = {user}>
-      <ChildA/>
-    </UserContext.Provider>
-   </div>
+  <>
+     <UserContext.Provider value = {user}>
+        <ChildA/>
+     </UserContext.Provider>
+    </>
+   
   )
 }
 
 export default App
-export{Usercontext}
+export {UserContext}
