@@ -6,7 +6,7 @@ const ChildC = () => {
     const theme = useContext(themeContext);
   return (
     <div>
-       <button>
+       <button className='shadow-xl rounded-xl px-2 py-1 text-sm bg-pink-300 font-serif'>
         Change Theme
        </button>
     </div>

@@ -16,8 +16,10 @@ function App() {
   return (
 
     <themeContext.Provider value = {theme}>
-      <div>
+      <div className='flex items-center justify-center h-screen'>
+        <div className=' flex justify-center items-center h-84 w-84 shadow-2xl bg-purple-300 rounded-3xl'>
         <ChildA/>
+      </div>
       </div>
     </themeContext.Provider>
 
