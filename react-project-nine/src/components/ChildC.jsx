@@ -6,7 +6,9 @@ const ChildC = () => {
     const theme = useContext(themeContext);
   return (
     <div>
-       {theme}
+       <button>
+        Change Theme
+       </button>
     </div>
   )
 }

@@ -16,7 +16,9 @@ function App() {
   return (
 
     <themeContext.Provider value = {theme}>
-      <ChildA/>
+      <div>
+        <ChildA/>
+      </div>
     </themeContext.Provider>
 
 
