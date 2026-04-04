@@ -6,6 +6,9 @@ import About from './components/About'
 import Dashboard from './components/Dashboard'
 import Navbar from './components/Navbar'
 import ParaComp from './components/ParaComp'
+import Courses from './components/Courses'
+import MockTest from './components/MockTest'
+import Reports from './components/Reports'
 
 const router = createBrowserRouter(
   [
@@ -31,7 +34,20 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <Dashboard/>
-      </div>
+      </div>,
+      children : [
+        {
+          path:'courses',
+          element:<Courses/> 
+        },{
+          path:'mocktest',
+          element:<MockTest/>
+        },{
+          path:'reports',
+          element:<Reports/>
+        }
+      ]
+
     },
     {
       path:"/student/:id",
