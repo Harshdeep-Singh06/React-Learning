@@ -9,6 +9,7 @@ import ParaComp from './components/ParaComp'
 import Courses from './components/Courses'
 import MockTest from './components/MockTest'
 import Reports from './components/Reports'
+import NotFound from './components/NotFound'
 
 const router = createBrowserRouter(
   [
@@ -56,6 +57,10 @@ const router = createBrowserRouter(
         <Navbar/>
         <ParaComp/>
       </div>
+    },
+    {
+      path:'*',
+      element:<NotFound/>
     },
   ]
 )
