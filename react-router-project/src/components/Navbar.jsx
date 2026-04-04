@@ -1,18 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className='bg-green-900 text-white px-6 py-4'>
+    <nav className='bg-gray-900 text-white px-6 py-4'>
         <ul className='flex items-center justify-between'>
             <li>
-                <Link to = '/'>Home</Link>
+                <NavLink to = '/' className={({isActive})=>isActive ? "text-yellow-400" : ""}>
+                    Home
+                </NavLink>
             </li>
             <li>
-                <Link to = '/about'>About</Link>
+                <NavLink to = '/about' className={({isActive})=>isActive ? "text-yellow-400" : ""}>
+                    About
+                </NavLink>
             </li>
             <li>
-                <Link to = '/dashboard'>Dashboard</Link>
+                <NavLink to = '/dashboard' className={({isActive})=>isActive ? "text-yellow-400" : ""}>
+                    Dashboard
+                </NavLink>
             </li>
         </ul>
     </nav>
