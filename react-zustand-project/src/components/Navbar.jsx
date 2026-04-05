@@ -4,10 +4,14 @@ import useMystore from '../store'
 const Navbar = () => {
 
     const state = useMystore();
-    console.log(state)
+    // console.log(state)
 
     const handleClick = (()=>{
         state.increment();
+    })
+
+    const handleNameClick = (()=>{
+        state.capitalizeName();
     })
 
   return (
@@ -18,6 +22,12 @@ const Navbar = () => {
         onClick={handleClick} 
         className='border-3 border-sky-400 rounded-xl px-4 py-2 mt-6 font-semibold active:translate-y-2 active:text-sky-800   active:border-sky-800 transition '>
             Increment
+        </button>
+        <br />
+        <button
+        onClick={handleNameClick} 
+        className='border-3 border-sky-400 rounded-xl px-4 py-2 mt-6 font-semibold active:translate-y-2 active:text-sky-800   active:border-sky-800 transition '>
+            Capitalize
         </button>
     </div>
   )

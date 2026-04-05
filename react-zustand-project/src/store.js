@@ -1,14 +1,19 @@
 import { create } from 'zustand'
 
-const useMystore = create((set)=>({
+const useMystore = create((set,get)=>({
     count: 1,
-    name: "Harsh",
+    name: "harsh",
     increment: ()=>{
+        set((state)=>({
+            count: state.count+1
+        }))
+    },
+    capitalizeName: () => {
+        const {name} = get();
         set({
-            count: 2,
+            name: name.charAt(0).toUpperCase() + name.slice(1)
         })
     }
-    
 }))
 
 export default useMystore;
