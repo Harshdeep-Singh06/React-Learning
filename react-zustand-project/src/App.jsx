@@ -6,13 +6,10 @@ import Navbar from './components/Navbar';
 const App = () => {
  
  const state = useMystore();
- console.log(state)
 
   return (
-   <div className='bg-gray-900 min-h-screen'> 
-   <div className='text-white text-2xl'>
+   <div className='flex flex-col items-center justify-center bg-gray-900 min-h-screen text-white'> 
     <Navbar/>
-   </div>
    </div>
   )
 }
