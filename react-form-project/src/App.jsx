@@ -22,29 +22,27 @@ function App() {
 
     <div className='mb-4'>
       <label className='text-white text-xl font-serif shadow-xl shadow-sky-700'>First Name: </label>
-      <input {...register("FirstName", { required:"First Name is required",
-      minLength:{value:3, message:'Minimum length atleast 3'},
-       maxLength:{value:6, message: "Maximum length atleast 6"}
-      })} className='shadow-xl shadow-sky-900 border-2 border-sky-500 outline-none rounded-2xl ml-2 px-3 text-white  focus:border-sky-300'/>
-      {errors.FirstName && <p className='font-semibold text-sky-200 ml-20 mt-3' >{errors.FirstName.message}</p>}
+      <input {...register("firstName")} className='shadow-xl shadow-sky-900 border-2 border-sky-500 outline-none rounded-2xl ml-2 px-3 text-white  focus:border-sky-300'/>
+      {errors.FirstName && <p className='font-semibold text-sky-200 ml-20 mt-3' >{errors.First.message}</p>}
     </div>
 
     <div className='mb-4'>
       <label className='text-white text-xl font-serif shadow-xl shadow-sky-700'>Middle Name: </label>
-      <input {...register("MiddleName", { required:"Middle Name is required",
+      <input {...register("MiddleName"), { required:"Middle Name is required",
       minLength:{value:3, message:'Minimum length atleast 3'},
        maxLength:{value:6, message: "Maximum length atleast 6"}
-      })} className='shadow-xl shadow-sky-900 border-2 border-sky-500 outline-none rounded-2xl ml-2 px-3 text-white  focus:border-sky-300'/>
+      }} className='shadow-xl shadow-sky-900 border-2 border-sky-500 outline-none rounded-2xl ml-2 px-3 text-white  focus:border-sky-300'/>
       {errors.MiddleName && <p className='font-semibold text-sky-200 ml-20 mt-3' >{errors.MiddleName.message}</p>}
     </div>
 
     <div className='mb-4'>
       <label className='text-white text-xl font-serif shadow-xl shadow-sky-700'>Last Name: </label>
       <input {...register("LastName",
-      { required:"Last Name is required",
-      minLength:{value:3, message:'Minimum length atleast 3'},
-       maxLength:{value:6, message: "Maximum length atleast 6"}
-      })} 
+       { pattern: {
+        value: /^[A-Za-z]+$/i,
+        message: "Put valid Last name"
+      }  
+       })} 
       className='shadow-xl shadow-sky-900 border-2 border-sky-500 outline-none rounded-2xl ml-2 px-3 text-white focus:border-sky-300'/>
       {errors.LastName && <p className='font-semibold text-sky-200 ml-20 mt-3' >{errors.LastName.message}</p>}
     </div>
