@@ -8,10 +8,12 @@ function App() {
     register,
     handleSubmit,
     watch,
-    formState: { errors },
+    formState: { errors,isSubmitting, isSubmitted },
   } = useForm();
 
-  function onSubmit(data){
+  async function onSubmit(data){
+    //API call simulate
+    await new Promise((resolve)=>setTimeout(resolve, 5000));
     console.log("Submitting the form",data )
   }
 
@@ -49,9 +51,14 @@ function App() {
 
      <button 
           type="submit"
+          disabled={isSubmitting}
           className="mt-4 ml-33 border-4 border-sky-500 text-sky-400 font-semibold px-4 py-1 rounded-2xl shadow-sky-900 text-sm hover:font-semibold hover:border-sky-300 hover:text-sky-200
           active:translate-y-2 transition">
-          Submit
+         {isSubmitting
+           ? "Submitting..."
+           : isSubmitted
+           ? "Submitted"
+           : "Submit"}
         </button>
 
   </form>
