@@ -1,6 +1,7 @@
 import { create } from 'zustand'
-
-const useMystore = create((set,get)=>({
+import { createJSONStorage, persist } from 'zustand/middleware'
+ 
+const useMystore = create(persist((set,get)=>({
     count: 1,
     name: "harsh",
     increment: ()=>{
@@ -14,6 +15,8 @@ const useMystore = create((set,get)=>({
             name: name.charAt(0).toUpperCase() + name.slice(1)
         })
     }
+}),{name: 'mystore',
+    storage: createJSONStorage(()=>sessionStorage)
 }))
 
 export default useMystore;
