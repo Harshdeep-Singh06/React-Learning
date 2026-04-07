@@ -22,15 +22,22 @@ function App() {
   //   console.log("Render Again");
   // })
 
-  const [itme, setTimee] = useState(0);
-  function startTimer(){
+  const [time, setTime] = useState(0); 
 
+  let timeRef = useRef(null);
+
+  function startTimer(){
+    timeRef.current = setInterval(()=>{
+      setTime(time => time + 1)
+    },1000);
   }
   function stopTimer(){
-
+    clearInterval(timeRef.current);
+    timeRef.current = null;
   }
   function resetTimer(){
-
+    stopTimer();
+    setTime(0);
   }
 
   return (
