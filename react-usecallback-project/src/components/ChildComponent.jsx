@@ -7,7 +7,9 @@ const ChildComponent = React.memo(
 
   return (
     <div>
-        <button className='px-4 py-2 rounded-xl border-2 border-purple-400 text-purple-400 font-semibold active:translate-y-2 transition duration-300'>
+        <button 
+        onClick={props.handleClick}
+        className='px-4 py-2 rounded-xl border-2 border-purple-400 text-purple-400 font-semibold active:translate-y-2 transition duration-300'>
             {props.buttonName}
         </button>
     </div>

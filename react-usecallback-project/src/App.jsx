@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import './App.css'
 import ChildComponent from './components/ChildComponent';
 
@@ -8,6 +8,10 @@ function App() {
   function handleClick(){
     setCount(count + 1);
   }
+
+  const handleClick = useCallback(()=>{
+    setCount(count + 1);
+  });
 
   return (
    <div className='flex flex-col justify-center items-center min-h-screen bg-black'>
@@ -25,7 +29,10 @@ function App() {
    </button>
   
    <div>
-    <ChildComponent buttonName="Click Me"/>
+    <ChildComponent
+     buttonName="Click Me"
+     handleClick={handleClick}
+     />
    </div>
    </div>
   )
