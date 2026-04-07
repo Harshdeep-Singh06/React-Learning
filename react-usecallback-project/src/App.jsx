@@ -8,7 +8,7 @@ function App() {
 
   const handleClick = useCallback(()=>{
     setCount(count + 1);
-},[]);
+},[count]);
 
   return (
    <div className='flex flex-col justify-center items-center min-h-screen bg-black'>
