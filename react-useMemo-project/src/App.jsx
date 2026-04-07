@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 
 import './App.css'
 
@@ -14,9 +14,9 @@ function App() {
         return num*2;
     }
 
-    let doubleValue = expensiveTask(input);
+    let doubleValue =  useMemo(()=>expensiveTask(input),[input]) ;
 
-  
+ 
 
   return (
    <div className='flex flex-col justify-center items-center min-h-screen bg-black'>
