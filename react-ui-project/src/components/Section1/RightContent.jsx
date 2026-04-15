@@ -3,10 +3,13 @@ import 'remixicon/fonts/remixicon.css'
 import RightCard from './RightCard'
 
 
-const RightContent = () => {
+const RightContent = (props) => {
   return (
-     <div className='h-full w-2/3 p-6'>
-       <RightCard/>
+     <div className='h-full flex rounded-4xl overflow-hidden flex-nowrap gap-10  w-2/3 p-6 overflow-x-auto'>
+      {props.users.map(function(elem){
+       
+        return <RightCard img={elem.img}/>
+      })}
     </div>
   )
 }

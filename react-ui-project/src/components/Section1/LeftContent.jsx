@@ -4,7 +4,7 @@ import Arrow from './Arrow'
 
 export const LeftContent = () => {
   return (
-    <div className='h-full w-1/3 flex justify-between flex-col'>
+    <div className='h-full  w-1/3 flex justify-between flex-col'>
         <HeroText/>
         <Arrow/>
     </div>
