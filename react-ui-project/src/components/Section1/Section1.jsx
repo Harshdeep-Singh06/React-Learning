@@ -1,8 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Section1 = () => {
   return (
-    <div className='min-h-screen bg-sky-900'>
+    <div className='h-screen w-full'>
+        <Navbar/>
         Section 1
     </div>
   )
