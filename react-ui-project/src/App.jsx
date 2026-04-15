@@ -8,21 +8,25 @@ function App() {
   const users = [
     {
       img:'https://i.pinimg.com/736x/47/1c/d3/471cd32de3b7e48fff6e8111a10a8fa3.jpg',
-      intro:'', 
+      intro:'',
+      color:'yellow',  
       tag:'Immortal'
     },{
       img:'https://i.pinimg.com/736x/fd/0f/2b/fd0f2b63bbd6599f1e3cece2a9f67dc4.jpg',
-      intro:'', 
+      intro:'',
+      color:'blue', 
       tag:'Unreachable'
     },
     {
       img:'https://i.pinimg.com/736x/ae/7a/06/ae7a06eeb84d0bac60a097612c437eb5.jpg',
       intro:'', 
+      color:'green', 
       tag:'Unbothered'
     },
     {
       img:'https://i.pinimg.com/736x/d4/2c/14/d42c140ac5d286d9c7d83a4d77739aaa.jpg',
       intro:'', 
+      color:'red', 
       tag:'Baller'
     },
     {
