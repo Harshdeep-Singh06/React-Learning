@@ -7,9 +7,23 @@ function App() {
  
   const users = [
     {
-      img:'https://imgs.search.brave.com/P_jagumKs4ovL0XtVVZN5dMALnRyJ-mgxH4VESPbYSs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzU5L2Mw/L2MwLzU5YzBjMDgx/ZDg4MmRmMmFhZWIz/NTA4ODA0N2VjNWE3/LmpwZw',
+      img:'https://i.pinimg.com/736x/47/1c/d3/471cd32de3b7e48fff6e8111a10a8fa3.jpg',
+      intro:'', 
+      tag:'Immortal'
+    },{
+      img:'https://i.pinimg.com/736x/fd/0f/2b/fd0f2b63bbd6599f1e3cece2a9f67dc4.jpg',
+      intro:'', 
+      tag:'Unreachable'
+    },
+    {
+      img:'https://i.pinimg.com/736x/ae/7a/06/ae7a06eeb84d0bac60a097612c437eb5.jpg',
       intro:'', 
       tag:'Unbothered'
+    },
+    {
+      img:'https://i.pinimg.com/736x/d4/2c/14/d42c140ac5d286d9c7d83a4d77739aaa.jpg',
+      intro:'', 
+      tag:'Baller'
     },
     {
       img:'https://images.unsplash.com/photo-1663524789647-090d8cbd834b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
