@@ -7,7 +7,7 @@ const RightCard = (props) => {
         <img 
         className='h-full w-full flex flex-nowrap gap-10 object-cover'
         src ={props.img} alt= ""/>
-        <RightCardContent id={props.id} tag={props.tag}/>
+        <RightCardContent id={props.id} color={props.color} tag={props.tag}/>
     </div>
   )
 }
