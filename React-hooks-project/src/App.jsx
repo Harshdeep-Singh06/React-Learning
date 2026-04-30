@@ -7,9 +7,9 @@ function App() {
 
   return (
    <div className='bg-gray-900 text-white min-h-screen flex flex-col justify-center items-center'>
-    <h1>
-      hello
-    </h1>
+    <button className='text-purple-950 border-3 border-purple-950 px-4 py-2 rounded-xl bg-black font-semibold active:translate-y-2 active:border-purple-900 active:text-purple-900 transition'>
+      Click me
+    </button>
    </div>
   )
 }
